@@ -1,28 +1,30 @@
 package com.company;
-import java.util.Scanner;
-public class good {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        pattern(n);
+
+class good {
+    public int factorial(int i)
+    {
+        if (i == 0)
+            return 1;
+        return i * factorial(i - 1);
     }
+    public static void main(String[] args)
+    {
+        int n = 4, i, j;
+        good g = new good();
+        for (i = 0; i <= n; i++) {
+            for (j = 0; j <= n - i; j++) {
 
-    static void pattern(int n) {
-
-        for (int row = 1; row <= n; row++) {
-            // n then (n-row) & (n+row)
-            for(int col=1; col<=2*n-1; col++){
-                if(row==1||col==n-(2*row-1)||col==n+(2*row-1)){
-
-                    System.out.print("*");
-                }
-                else
-                    System.out.print(" ");
+                // for left spacing
+                System.out.print(" ");
             }
+            for (j = 0; j <= i; j++) {
+
+                // nCr formula
+                System.out.print(" " + g.factorial(i)/(g.factorial(i - j)* g.factorial(j)));
+            }
+
+            // for newline
             System.out.println();
-
         }
-
-        System.out.println();
     }
 }
