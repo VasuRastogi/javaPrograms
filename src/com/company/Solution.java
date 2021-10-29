@@ -1,48 +1,33 @@
 package com.company;
-class Solution {
+public class Solution {
 
-    // Function to find square root
-    // of given number upto given
-    // precision
-    static int squareRoot(int number)
-    {
-        int start = 0, end = number;
-        int mid;
-
-        // variable to store the answer
-        int ans = 0;
-
-        // for computing integral part
-        // of square root of number
-        while (start <= end) {
-            mid = (start + end) / 2;
-
-            if (mid * mid == number) {
-                ans = mid;
-                break;
-            }
-
-            // incrementing start if integral
-            // part lies on right side of the mid
-            if (mid * mid < number) {
-                start = mid + 1;
-                ans = mid;
-            }
-
-            // decrementing end if integral part
-            // lies on the left side of the mid
-            else {
-                end = mid - 1;
-            }
-        }
-        return ans;
+    public static void main(String []args){
+        int []arr=new int[]{1,5,7,8,9};
+        int targt=4;
+        int store=binarySearch(arr, targt);
+        System.out.println(store);
     }
 
-    // Driver code
-    public static void main(String[] args)
-    {
-        // Function calling
-        System.out.println(squareRoot(5));
+    public static int binarySearch(int[] nums, int target) {
+        if (nums == null || nums.length == 0)
+            return -1;
 
+        int left = 0, right = nums.length;
+        while (left < right) {
+            // Prevent (left + right) overflow
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+
+        // Post-processing:
+        // End Condition: left == right
+        if (left != nums.length && nums[left] == target) return left;
+        return -1;
     }
 }
