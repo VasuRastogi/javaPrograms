@@ -1,28 +1,29 @@
 package com.company;
-import java.io.*;
-import java.io.Serializable;
+import java.util.Scanner;
+class Solution{
+    public static void main(String[]args){
+        //get size of array;
 
-class Student implements Serializable{
-    int id;
-    String name;
-    public Student(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+        Scanner sc = new Scanner(System.in);
+        int size=sc.nextInt();
 
-}
-public class Solution {
-    public static void main(String args[]) {
-        try {
-            Student s1 = new Student(211, "Vasu");
-            FileOutputStream fout = new FileOutputStream("newtxt");
-            ObjectOutputStream out = new ObjectOutputStream(fout);
-            out.writeObject(s1);
-            out.flush();
-            out.close();
-            System.out.println("Done!!");
-        } catch (Exception e) {
-            System.out.println(e);
+        int[] ar = new int[size];
+        //get input
+
+        for(int i=0; i<size; i++){
+            Scanner sc1 = new Scanner(System.in);
+            int store = sc1.nextInt();
+            ar[i]=store;
         }
+        int j=0;
+        //add
+        for(j=1; j<size; j++){
+            ar[j]=ar[j-1]+ar[j];
+        }
+
+        // print
+
+        System.out.println(ar[size-1]);
     }
+
 }

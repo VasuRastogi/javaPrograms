@@ -11,8 +11,7 @@ public class bubbleSort {
     static void bubbleSrt(int[] arr){
         for (int i = 0; i < arr.length; i++)
             for (int j = 0; j < arr.length-i-1; j++)
-                if (arr[j] > arr[j+1])
-                {
+                if (arr[j] > arr[j+1])                {
                     // swap arr[j+1] and arr[j]
                     int temp = arr[j];
                     arr[j] = arr[j+1];
