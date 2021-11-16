@@ -1,29 +1,34 @@
 package com.company;
-import java.util.Scanner;
-class Solution{
-    public static void main(String[]args){
-        //get size of array;
+import java.util.*;
 
-        Scanner sc = new Scanner(System.in);
-        int size=sc.nextInt();
+public class Solution{
+    static int[][] g =new int[10][10];
+    static int j, i=0, v=0;
+    static int [] visit=new int[i];
 
-        int[] ar = new int[size];
-        //get input
-
-        for(int i=0; i<size; i++){
-            Scanner sc1 = new Scanner(System.in);
-            int store = sc1.nextInt();
-            ar[i]=store;
+    public static void DFS(int p){
+        int o;
+        for (int i=0; i<v; i++)
+        if(!(visit[i]) && g[i][j]==1){
+            DFS(i);
         }
-        int j=0;
-        //add
-        for(j=1; j<size; j++){
-            ar[j]=ar[j-1]+ar[j];
-        }
-
-        // print
-
-        System.out.println(ar[size-1]);
     }
+    public static void main(String[]args){
 
+        System.out.println("Enter vertices:");
+        Scanner sc = new Scanner(System.in);
+        v = sc.nextInt();
+
+        System.out.println("Enter adjacent matrix:");
+        for(i=0;i<v; i++){
+            for (j=0; j<v; j++){
+               int k = sc.nextInt();
+               System.out.println(g[i][j]);
+            }
+        }
+        for(int f=0; f<v; f++){
+            visit[i]=0;
+            DFS(0);
+        }
+    }
 }
