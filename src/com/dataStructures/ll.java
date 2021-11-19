@@ -1,6 +1,8 @@
 package com.dataStructures;
-public class linkedList{
-    public static class Node{
+
+public class ll {
+
+    static class Node{
         int data;
         Node next;
 
@@ -10,9 +12,8 @@ public class linkedList{
         }
     }
     static Node head=null;
-    static Node tail=null;
-
-    static void addData(int data){
+    static Node tail = null;
+    public static void addData(int data){
         Node N1 = new Node(data);
         if(head==null){
             head=N1;
@@ -23,19 +24,22 @@ public class linkedList{
             tail=N1;
         }
     }
-    static void display(){
+    public static void displayData(){
         Node temp=head;
         if(head==null){
             System.out.println("List is empty :)");
         }
-        while (temp!=null) {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
+        while(temp!=null){
+            System.out.print(temp.data +" ");
+            temp=temp.next;
         }
     }
-    public static void main(String[]args){
-        addData(4);
+    public static void main(String []args){
+        addData(1);
+        addData(2);
         addData(7);
-        display();
+        addData(9);
+        addData(5);
+        displayData();
     }
 }
