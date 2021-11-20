@@ -29,13 +29,38 @@ public class linkedList{
             System.out.println("List is empty :)");
         }
         while (temp!=null) {
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + "->");
             temp = temp.next;
         }
+        System.out.print("END!");
+    }
+    static void insertFirst(int data){
+        Node N = new Node(data);
+        N.next = head;
+        head=N;
+    }
+    static void insertLast(int data){
+        Node N = new Node(data);
+        tail.next=N;
+        tail=N;
+    }
+    static void insertMid(int data, int index){
+        Node N = new Node(data);
+        Node temp = head;
+        for(int i=1; i<index; i++){
+            temp=temp.next;
+        }
+        N.next=temp.next;
+        temp.next=N;
     }
     public static void main(String[]args){
+        addData(1);
+        addData(2);
+        addData(3);
         addData(4);
-        addData(7);
+        insertFirst(0);
+        insertLast(5);
+        insertMid(6,3);
         display();
     }
 }
