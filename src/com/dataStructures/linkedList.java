@@ -53,6 +53,27 @@ public class linkedList{
         N.next=temp.next;
         temp.next=N;
     }
+    static void delete(int index){
+        Node N = new Node(9); // temporary node created.
+        if (index == 0){
+            head=head.next;
+            return;
+        }
+        Node temp = head;
+        for(int i=1; i<index; i++){
+            temp=temp.next;
+        }
+        N.next = (temp.next).next;
+        temp.next = N.next;
+        temp = N.next;
+    }
+    static void value(int index){
+        Node temp = head;
+        for(int i=1; i<=index; i++){
+            temp = temp.next;
+        }
+        System.out.println(temp.data);
+    }
     public static void main(String[]args){
         addData(1);
         addData(2);
@@ -61,6 +82,9 @@ public class linkedList{
         insertFirst(0);
         insertLast(5);
         insertMid(6,3);
+        delete(3);
+        value(3);
         display();
+
     }
 }

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Sorting;
 
 public class selectionSort {
     static void swap(int[] arr, int first, int second) {
