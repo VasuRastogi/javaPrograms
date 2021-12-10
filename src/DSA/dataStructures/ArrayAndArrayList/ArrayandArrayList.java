@@ -1,4 +1,4 @@
-package com.company;
+package DSA.dataStructures.ArrayAndArrayList;
 
 import java.util.*;
 

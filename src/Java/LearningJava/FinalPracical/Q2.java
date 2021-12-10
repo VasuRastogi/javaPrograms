@@ -1,6 +1,4 @@
-package com.company.FinalPracical;
-
-import java.util.Arrays;
+package Java.LearningJava.FinalPracical;
 
 public class Q2{
     static int largest(int [] arr)

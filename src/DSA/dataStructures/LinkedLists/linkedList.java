@@ -1,4 +1,4 @@
-package com.dataStructures;
+package DSA.dataStructures.LinkedLists;
 public class linkedList{
     public static class Node{
         int data;

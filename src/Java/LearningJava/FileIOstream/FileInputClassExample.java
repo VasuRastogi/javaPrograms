@@ -1,4 +1,4 @@
-package com.company.FileIOstream;
+package Java.LearningJava.FileIOstream;
 
 import java.io.*;
 import java.util.Arrays;

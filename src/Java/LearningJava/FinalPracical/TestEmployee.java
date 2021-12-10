@@ -1,4 +1,4 @@
-package com.company.FinalPracical;
+package Java.LearningJava.FinalPracical;
 
 public class TestEmployee extends Employee {
     public static void main(String []args){

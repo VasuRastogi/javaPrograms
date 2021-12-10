@@ -1,4 +1,4 @@
-package com.company.Sorting;
+package DSA.Sorting;
         //mergeSORT
 public class practice {
 

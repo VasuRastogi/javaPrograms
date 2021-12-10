@@ -1,4 +1,4 @@
-package com.company.GUI;
+package Java.LearningJava.GUI;
 import java.awt.*;
 import javax.swing.*;
 

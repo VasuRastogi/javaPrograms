@@ -1,4 +1,4 @@
-package com.company.FinalPracical;
+package Java.LearningJava.FinalPracical;
 
 public class Employee extends Person{
     double annualSalary;

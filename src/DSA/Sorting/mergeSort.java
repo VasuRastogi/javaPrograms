@@ -1,4 +1,4 @@
-package com.company.Sorting;
+package DSA.Sorting;
 
 class mergeSort
 {

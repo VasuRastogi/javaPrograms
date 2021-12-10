@@ -1,4 +1,4 @@
-package com.company.FileIOstream;
+package Java.LearningJava.FileIOstream;
 
 import java.nio.charset.StandardCharsets;
 

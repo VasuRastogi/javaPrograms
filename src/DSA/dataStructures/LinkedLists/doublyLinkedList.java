@@ -1,4 +1,4 @@
-package com.dataStructures;
+package DSA.dataStructures.LinkedLists;
 
 public class doublyLinkedList {
     public static class Node{
