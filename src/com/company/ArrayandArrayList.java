@@ -1,4 +1,4 @@
-package com.Recursion;
+package com.company;
 
 import java.util.*;
 
