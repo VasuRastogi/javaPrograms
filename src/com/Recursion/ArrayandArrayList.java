@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArrayandArrayList {
     public static void main(String[] args) {
-//        ArrayList<Integer> list = new ArrayList<>(5);
+//        ArrayList<Integer> list = new ArrayList<>(5 //initial size /*Makes program use less resource*/);
 //        Scanner sc = new Scanner(System.in);
 //
 //        int i=5;
