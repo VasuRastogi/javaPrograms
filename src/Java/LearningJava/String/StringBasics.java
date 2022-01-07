@@ -75,6 +75,28 @@ public class StringBasics {
         S2.replace("i" ,"I");  //not work    //explicit (i.e. clear) assignment is required here.
         System.out.println(S2);
 
+        // equalsIgnoreCase(String str)
+        System.out.println("-----equalsIgnoreCase()-----");
+        String Ss = "VAsU";
+        String Ss1 = "vaSu";
+        System.out.println(Ss.equals(Ss1));         //false as it checks case too.
+        System.out.println(Ss.equalsIgnoreCase(Ss1));  // true as case is ignored.
 
+        System.out.println("-----split(String regex)-----");
+        String re = "The quick brown fox jumped over a lazy dog.";
+        String spp[] = re.split("\\s");   //  "\\s" is regex for space
+        for(String i : spp){
+            System.out.println(i);
+        }
+
+        //intern()
+        System.out.println("-----intern()-----");
+        String strr = new String ("1.Hello this was in heap as created from new but using intern it is now in string pool.");
+        String strr1 = "2.This is in StringPool as it is created using String literal.";
+        String neww = strr.intern();
+        System.out.println(neww);
+        System.out.println(strr1);
+
+        System.out.println("-----intern()-----");
     }
 }
