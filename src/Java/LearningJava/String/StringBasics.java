@@ -97,6 +97,34 @@ public class StringBasics {
         System.out.println(neww);
         System.out.println(strr1);
 
-        System.out.println("-----intern()-----");
+        System.out.println("-----indexOf(int ch) & indexOf(String substring)-----");
+        String ss0 = "Hello i am vasu";
+        System.out.println(ss0.indexOf("i"));
+        System.out.println(ss0.indexOf("am"));
+
+        System.out.println("-----indexOf(int ch, int fromIndex) & indexOf(String substring, int fromIndex)-----");
+        System.out.println(ss0.indexOf("a", 10)); // index 9 have its ans if i haven't stated fromIndex.
+        System.out.println(ss0.indexOf("hello", 6));  // return -1 as untill 5 it is hello then no occurance is present.
+
+        System.out.println("-----toLowerCase() & toLowerCase(Locale locale)-----");
+        // locale is a set of parameters that defines region and language.
+        /*----------------------------------------*/
+        String ss1 = "This IS A TEsT StRiNg.";
+        System.out.println(ss1.toLowerCase());
+
+        System.out.println("-----toUpperCase() & toUpperCase(Locale locale)-----");
+        System.out.println(ss1.toUpperCase(Locale.ENGLISH));
+
+        System.out.println("-----trim()-----"); // it removes beginning and ending spaces in this string.
+        String sss = "  Hello this was very spacious but this dickhead trim chopped off spaces from front and last.      ";
+        System.out.println(sss.trim());
+
+        System.out.println("-----valueOf(int, boolean, float, object, etc)-----");  //converts value of any datatype or object to string.
+        int ii = 77;
+        boolean iie = true;
+        Object obj = new Object();
+        System.out.println(String.valueOf(ii));   //int converted to string.
+        System.out.println(String.valueOf(iie));  //botoUpperCase() & toUpperCase(Locale locale)olean converted to string.
+        System.out.println(String.valueOf(obj));  //Object converted to string.
     }
 }
