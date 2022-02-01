@@ -124,7 +124,7 @@ public class StringBasics {
         boolean iie = true;
         Object obj = new Object();
         System.out.println(String.valueOf(ii));   //int converted to string.
-        System.out.println(String.valueOf(iie));  //botoUpperCase() & toUpperCase(Locale locale)olean converted to string.
+        System.out.println(String.valueOf(iie));  //toUpperCase() & toUpperCase(Locale locale) boolean converted to string.
         System.out.println(String.valueOf(obj));  //Object converted to string.
     }
 }
