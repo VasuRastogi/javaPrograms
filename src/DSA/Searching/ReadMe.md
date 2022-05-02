@@ -1,0 +1,1 @@
+Whenever you get sorted array use binary search.

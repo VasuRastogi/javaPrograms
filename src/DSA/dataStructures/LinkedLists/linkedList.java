@@ -62,10 +62,26 @@ public class linkedList{
         Node temp = head;
         for(int i=1; i<index; i++){
             temp=temp.next;
+
         }
         N.next = (temp.next).next;
         temp.next = N.next;
         temp = N.next;
+    }
+    public static void DeleteMethod2(int index){
+        if(index == 1){head = head.next;return;}
+        Node temp = head;
+        // index must be >= 3
+        if(index == 2){
+            temp = head;
+            temp.next = temp.next.next;
+        }
+        if(index >= 3){
+            for(int i = 2; i<index; i++){
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+        }
     }
     static void value(int index){
         Node temp = head;
@@ -82,8 +98,10 @@ public class linkedList{
         insertFirst(0);
         insertLast(5);
         insertMid(6,3);
+        display();
         delete(3);
-        value(3);
+//        DeleteMethod2(3);
+//        value(3);
         display();
 
     }
