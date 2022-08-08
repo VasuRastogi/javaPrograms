@@ -7,13 +7,18 @@ package Recursion;
 
 public class fibonacci {
     public static void main(String[] args) {
-        int ans = fibo(10);
+        int ans = fibo(5);
         System.out.println(ans);
     }
     static int fibo(int n){
         if(n<2){
             return n;
         }
-        return fibo(n-1)+fibo(n-2);
+        return fibo(n-1)+fibo(n-2);      // here we have used recurssion relation;
     }
 }
+
+/*
+  if we solve this linear recurssive relation, we will get a relation:
+  (1/sqrt(5))*((1+sqrt(5)/2)**n - (1/sqrt(5))*((1-sqrt(5)/2)**n
+*/
