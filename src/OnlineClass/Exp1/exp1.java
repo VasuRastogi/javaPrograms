@@ -1,3 +1,8 @@
+/*
+Given the following table containing information about employees of an organization, develop a small java application, which accepts employee id from the command prompt and displays the following details as output
+*/
+// (c) VasuRastogi
+
 package OnlineClass.Exp1;
 
 // my program needs to take emp ID and display information.
