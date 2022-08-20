@@ -1,45 +1,50 @@
 package Java.testingJava;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+import java.io.*;
+import java.lang.Math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+import static java.util.stream.Collectors.toList;
 
 public class Solution {
-    public static void main(String[] args) {
-        int[]arr = new int[]{4,5,6,7,0,1,2};
-        System.out.println(search(arr,0));
-    }
-     static int search(int[] nums, int target) {
-//        int ans=-1;
-        int pivot = findgreaternum(nums);
-        if(pivot==-1){return binSrch(nums, target, 0, nums.length-1);}
-        if(nums[pivot]==target){return pivot;}
-        if(target>=nums[0]) {
-            return binSrch(nums, target,0, pivot-1 );
-        }
-            return binSrch(nums, target, pivot+1, nums.length-1);
-    }
-    // 1. finding last number of greater array.
-    public static int findgreaternum(int []nums){
-        int end = nums.length-1;
-        int start = 0;
-        while(start<= end) {
-            int mid = start+(end -start)/2;
-            if (mid<end && nums[mid+1]<nums[mid]){return mid;}
-            if (mid>start && nums[mid-1]>nums[mid]) {return mid-1;}
-            if (nums[mid]<=nums[start]){end = mid -1;}
-            else {start = mid+1;}
-            }
-        return -1;
-    }
-    public static int binSrch(int[]nums, int target, int start, int end) {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-            while (end >= start) {
-                int mid = start + (end - start) / 2;
-                if (nums[mid] > target) {
-                    end = mid - 1;
-                } else if (nums[mid] < target) {
-                    start = mid + 1;
-                } else  {
-                    return mid;
-                }
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<List<Integer>> arr = new ArrayList<>();
+
+        IntStream.range(0, n).forEach(i -> {
+            try {
+                arr.add(
+                        Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                                .map(Integer::parseInt)
+                                .collect(toList())
+                );
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
             }
-        return -1;
+        });
+
+        int result = Result.diagonalDifference(arr);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
     }
 }
