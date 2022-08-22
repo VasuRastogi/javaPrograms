@@ -1,44 +1,49 @@
+//(C) VasuRastogi 20BCS5135
 package OnlineClass.Exp2;
-
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class VideoStore extends Video{
-    ArrayList<Video> videos = new ArrayList<Video>();
-
-    public void addVideo(String vid){
-        videos.add(new Video(vid));
-        System.out.println("Video "+'"'+ videos.get(videos.size()-1).getName()+'"'+" added successfully");
+    public static ArrayList <Video> vidArr = new ArrayList <Video> ();
+    public static ArrayList <Video> CheckedOutArr = new ArrayList<Video>();
+    public static void addVideo(String Name){
+        vidArr.add(new Video(Name));
     }
-    public void doCheckout(String name){
-        for (int i=0; i<=videos.size()-1; i++) {
-            if (videos.get(i).videoName.equals(name)) {
-                videos.get(i).doCheckout();
+    public static void checkOut(String name){
+        for (int i =0; i < vidArr.size(); i++){
+            if(vidArr.get(i).Title.equals(name)){
+                beingCheckedOut(vidArr.get(i));
+                CheckedOutArr.add(vidArr.get(i));
+                vidArr.remove(i);
             }
         }
     }
-    public void returnVideo(String vid){
-        for (int i=0; i<=videos.size()-1; i++) {
-            if (videos.get(i).videoName.equals(vid)) {
-                videos.get(i).doReturn();
+    public static void returnVideo(String name){
+        try {
+            for (int i = 0; i < CheckedOutArr.size(); i++) {
+                if (CheckedOutArr.get(i).Title.equals(name)) {
+                    beingReturned(CheckedOutArr.get(i));
+                    vidArr.add(CheckedOutArr.get(i));
+                    CheckedOutArr.remove(i);
+                }
+            }
+        }catch (Exception e){System.err.println("Video isn't checked out, You can only rate the video that is already checked out.");}
+    }
+    public static void receiveRating(String name, int rating){
+        for(Video i : CheckedOutArr) { //rating must be given to the videos that are checked out already.
+            if(i.Title.equals(name)){
+                i.receiveRating(rating);
             }
         }
     }
-    public void receiveRating(String vid, int rating){
-        int  i = 0;
-        for (;i<=videos.size()-1; i++) {
-            if (videos.get(i).videoName.equals(vid)) {
-                videos.get(i).receiveRating(rating);
-            }
+    public static void listInventory(){
+        for(int i =0; i < vidArr.size(); i++){
+            System.out.println(vidArr.get(i).Title + "|" + vidArr.get(i).userRatings);
         }
-        System.out.println("Rating " + '"' + videos.get(i-1).getRating() + '"' + " is given to the Video \"" + videos.get(i-1).getName() + '"');
-
     }
-    public void listInventory(){
-        System.out.println("------------------------------------------");
-        System.out.println("Video Name | Checkout Status | Rating");
-        for (int i=0; i<=videos.size()-1; i++) {
-            System.out.println(videos.get(i).getName() + "|" + videos.get(videos.size() - 1).getCheckout() + "|" + videos.get(videos.size() - 1).getRating());
+    public static void listCheckedOutVideos(){
+        for(int i =0; i < CheckedOutArr.size(); i++){
+            System.out.println(CheckedOutArr.get(i).Title+ "|" + CheckedOutArr.get(i).userRatings);
         }
-        System.out.println("------------------------------------------");
     }
 }
