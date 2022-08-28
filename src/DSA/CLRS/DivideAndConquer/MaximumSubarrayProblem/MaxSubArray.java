@@ -1,7 +1,8 @@
-package DSA.CLRS.DivideAndConquer;
+package DSA.CLRS.DivideAndConquer.MaximumSubarrayProblem;
 
 import java.util.Arrays;
 
+//Overall complexity is O(nlog(n))
 public class MaxSubArray {
     public static int[] Find_Max_Crossing_Subarray(int [] arr, int low, int high, int mid){
         int leftSum = Integer.MIN_VALUE;
