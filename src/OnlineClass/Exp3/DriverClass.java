@@ -1,3 +1,4 @@
+//(c)VasuRastogi (github) 20BCS5135
 package OnlineClass.Exp3;
 
 import java.util.Scanner;
@@ -28,7 +29,7 @@ public class DriverClass extends Account{
                         SBAccount.amount = sc1.nextInt();
                         System.out.println("Specify if you are Normal or NRI (note: Program is case Sensitive)");
                         SBAccount.type = sc2.nextLine();
-                        System.out.println("Interest gained : ₹" + SBAccount.calculateInterest());
+                        System.out.println("________________________________\nInterest gained : ₹" + SBAccount.calculateInterest()+"\n________________________________");
                         break;
 
                     case 2:
@@ -38,7 +39,7 @@ public class DriverClass extends Account{
                         FDAccount.noOfDays = sc2.nextInt();
                         System.out.println("Enter your age:");
                         FDAccount.ageOfACHolder = sc3.nextInt();
-                        System.out.println("Interest gained : ₹" + FDAccount.calculateInterest());
+                        System.out.println("________________________________\nInterest gained : ₹" + FDAccount.calculateInterest()+"\n________________________________");
                         break;
 
                     case 3:
@@ -50,7 +51,7 @@ public class DriverClass extends Account{
                         RDAccount.monthlyAmount = sc3.nextInt();
                         System.out.println("Enter A/C holder's age:");
                         RDAccount.ageOfACHolder1 = sc4.nextInt();
-                        System.out.println("Interest gained : ₹" + RDAccount.calculateInterest());
+                        System.out.println("________________________________\nInterest gained : ₹" + RDAccount.calculateInterest()+"\n________________________________");
                         break;
                 }
         }while (UserInput!=0);
