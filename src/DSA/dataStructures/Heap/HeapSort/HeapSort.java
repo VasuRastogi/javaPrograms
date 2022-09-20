@@ -1,4 +1,4 @@
-package DSA.dataStructures.Heap;
+package DSA.dataStructures.Heap.HeapSort;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ public class HeapSort {
         b = temp;
     }
     public static void max_Heapify(int []A, int i, int n){
-//        this function takes an array and index i. it uses its operation from i'th index provided.
+        // this function takes an array and index i. it uses its operation from i'th index provided.
         int left = 2*i+1;
         int right = (2*i)+2;
         int largest = i;
