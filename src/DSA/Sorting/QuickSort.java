@@ -22,10 +22,16 @@ public class QuickSort {
         A[j] = temp;
     }
     void QuickSort(int[]A, int p, int r){
-        if(p<r) {   // condition will break when block size remains 1 at p == r
+        if(p<r) {
             int q = partition(A, p, r);
             QuickSort(A, p, q - 1);
             QuickSort(A, q + 1, r);
+        }
+    }void Tail_Recursive_QuickSort(int[]A, int p, int r){
+        if(p<r) {
+            int q = partition(A, p, r);
+            QuickSort(A, p, q - 1);
+            p =  q+1;   // it uses exact same function to do latter part
         }
     }
 
@@ -34,6 +40,7 @@ public class QuickSort {
         System.out.println("Before: "+ Arrays.toString(arr));
         QuickSort q = new QuickSort();
         q.QuickSort(arr, 0, arr.length -1);
+//        q.Tail_Recursive_QuickSort(arr, 0, arr.length-1);
         System.out.println("After: "+Arrays.toString(arr));
     }
 }
