@@ -27,7 +27,7 @@ public class QuickSort {
             QuickSort(A, p, q - 1);
             QuickSort(A, q + 1, r);
         }
-    }void Tail_Recursive_QuickSort(int[]A, int p, int r){
+    }void Tail_Recursive_QuickSort(int[]A, int p, int r){  // reduces space complexity.
         if(p<r) {
             int q = partition(A, p, r);
             QuickSort(A, p, q - 1);
