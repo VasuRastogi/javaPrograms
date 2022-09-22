@@ -1,4 +1,4 @@
-package DSA.Sorting;
+package DSA.Sorting.LinearTimeBasedSorting;
 
 import java.util.Arrays;
 
@@ -37,7 +37,9 @@ public class countSort {
 
     public static void main(String[] args) {
         int[]A = new int[]{5,4,3,2,1,8};
+        System.out.println("....Works in linear time O(n+K)....");
+        System.out.println("Without sort: "+Arrays.toString(A));
         countSort q = new countSort();
-        System.out.println(Arrays.toString(q.CountSort(A)));
+        System.out.println("With Count Sort: " + Arrays.toString(q.CountSort(A)));
     }
 }

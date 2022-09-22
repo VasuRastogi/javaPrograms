@@ -1,4 +1,4 @@
-package DSA.Sorting;
+package DSA.Sorting.ComparisonSorting;
 
 class mergeSort
 {

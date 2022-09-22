@@ -1,4 +1,4 @@
-package DSA.Sorting;
+package DSA.Sorting.ComparisonSorting;
 import java.util.Arrays;
 
 // clrs implementation.

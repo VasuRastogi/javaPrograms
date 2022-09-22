@@ -1,4 +1,4 @@
-package DSA.Sorting;
+package DSA.Sorting.ComparisonSorting;
 
 public class selectionSort {
     static void swap(int[] arr, int first, int second) {
@@ -19,7 +19,7 @@ public class selectionSort {
     static void selection(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             // find the max item in the remaining array and swap with correct index
-            int last = arr.length - i - 1;
+            int last = (arr.length - 1) - i;
             int maxIndex = getMaxIndex(arr, 0, last);
             swap(arr, maxIndex, last);
         }
