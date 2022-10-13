@@ -1,53 +1,70 @@
 package Java.testingJava;
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
-
-class Result {
-
-    /*
-     * Complete the 'simpleArraySum' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY ar as parameter.
-     */
-
-    public static int simpleArraySum(List<Integer> ar) {
-        int temp=0;
-        // Write your code here
-        for(int i = 0; i < ar.size(); i++){
-            temp = temp + ar.get(i);
-        }
-        return temp;
-    }
-
-}
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+//    public String longestPrefix(String s) {
+//        int i=0;
+//        int j=s.length()-1;
+//        char [] arr = new char[s.length()];
+//        char [] output = new char[s.length()];
+//        String Output="";
+//
+//        // let's initialize an array to store elements as s
+//
+////        for (int k = 0; k<s.length(); k++){
+////            arr[k] = Character.toString(s.charAt(k));
+////        }
+//        arr = s.toCharArray();
+//        // now we have all elements in an array.
+//        // complexity would be n^2. (  :(  )
+////        for(i = 0; i<arr.length; i++){
+////            for (j = arr.length-1; j>=0; j--){
+//        while(i<=j){
+//            if(arr[i] == arr[j]){
+//                output[i] = arr[i];
+//                output[j] = arr[j];
+//                i++;
+//                j--;
+//            }else{
+//                j--;
+//            }
+//        }
+//        int p =0;
+//        ArrayList<Character> updated_output = new ArrayList<Character>();
+//        for(int l =0; l<s.length();l++){
+//            if(output[l] != 0){
+//                updated_output.add(output[l]);
+//                p++;
+//            }
+//        }
+//
+//        for (Character ch : updated_output)
+//        {
+//            Output += ch;
+//        }
+//        return Output;
+//    }
+    public String longestPrefix(String s){
+        int i = 0;
+        int j = (s.length()+1)/2;
+        while(j>=i) {
+            if (s.charAt(i) == s.charAt(j-1)) {
+                i++;
+                j++;
+            }else{
+                j = j-i+1;
+                i = 0;
+            }
+        }
+        return "";
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("s = ");
+        String s = sc.nextLine();
 
-        int arCount = Integer.parseInt(bufferedReader.readLine().trim());
-
-        List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
-
-        int result = Result.simpleArraySum(ar);
-
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
+        Solution so = new Solution();
+        System.out.println(so.longestPrefix(s));
     }
 }
