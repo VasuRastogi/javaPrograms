@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="OnlineClass">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/OnlineClass/OnlineClass.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
