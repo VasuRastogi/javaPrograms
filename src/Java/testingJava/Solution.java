@@ -1,70 +1,35 @@
 package Java.testingJava;
-import java.io.*;
-import java.util.*;
 
-public class Solution {
-//    public String longestPrefix(String s) {
-//        int i=0;
-//        int j=s.length()-1;
-//        char [] arr = new char[s.length()];
-//        char [] output = new char[s.length()];
-//        String Output="";
-//
-//        // let's initialize an array to store elements as s
-//
-////        for (int k = 0; k<s.length(); k++){
-////            arr[k] = Character.toString(s.charAt(k));
-////        }
-//        arr = s.toCharArray();
-//        // now we have all elements in an array.
-//        // complexity would be n^2. (  :(  )
-////        for(i = 0; i<arr.length; i++){
-////            for (j = arr.length-1; j>=0; j--){
-//        while(i<=j){
-//            if(arr[i] == arr[j]){
-//                output[i] = arr[i];
-//                output[j] = arr[j];
-//                i++;
-//                j--;
-//            }else{
-//                j--;
-//            }
-//        }
-//        int p =0;
-//        ArrayList<Character> updated_output = new ArrayList<Character>();
-//        for(int l =0; l<s.length();l++){
-//            if(output[l] != 0){
-//                updated_output.add(output[l]);
-//                p++;
-//            }
-//        }
-//
-//        for (Character ch : updated_output)
-//        {
-//            Output += ch;
-//        }
-//        return Output;
-//    }
-    public String longestPrefix(String s){
-        int i = 0;
-        int j = (s.length()+1)/2;
-        while(j>=i) {
-            if (s.charAt(i) == s.charAt(j-1)) {
-                i++;
-                j++;
-            }else{
-                j = j-i+1;
-                i = 0;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Arrays;
+
+class Solution {
+    @Contract(pure = true)
+    public static int @NotNull [] findMaximumSubarray(int @NotNull [] A) {
+        int n = A.length;
+        int maxSum = Integer.MIN_VALUE;
+        int[] maxSubarray = new int[2];
+
+        for (int i = 0; i < n; i++) {
+            int currentSum = 0;
+
+            for (int j = i; j < n; j++) {
+                currentSum += A[j];
+
+                if (currentSum > maxSum) {
+                    maxSum = currentSum;
+                    maxSubarray[0] = i;
+                    maxSubarray[1] = j;
+                }
             }
         }
-        return "";
+        return maxSubarray;
     }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("s = ");
-        String s = sc.nextLine();
 
-        Solution so = new Solution();
-        System.out.println(so.longestPrefix(s));
+    public static void main(String[] args) {
+        int [] arr = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        System.out.println(Arrays.toString(findMaximumSubarray(arr)));
     }
 }

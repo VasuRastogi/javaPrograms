@@ -32,8 +32,7 @@ public class MaxSubArray {
 
         int mid = (low + ((high-low)/2));
         if(low == high){   // for one element
-            int [] locAns = new int[]{low, high, arr[(low+high)/2]};
-            return (locAns);
+            return (new int[]{low, high, arr[(low+high)/2]});
         }
 
         int[] a = Find_Max_Subarray(arr, low, mid);                   // For Left Half.
