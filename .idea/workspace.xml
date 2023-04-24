@@ -5,54 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d8a32f-2aaa-4433-8b0e-99067915cd21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/DynamicProgramming/MCM/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/KMP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/boyerMoore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/nativeApproach.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/String/StringMatching/rabinKarp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/dataStructures/LinkedLists/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/dataStructures/LinkedLists/reversing_LL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DSA/dataStructures/LinkedLists/reversing_LL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/AnonymousClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/InfosysExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/testingJava/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/testingJava/solution.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/Three_Sum/Three_Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/Three_Sum/Three_Sum.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/Three_Sum/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DSA/Graph/BFS/BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/BuiltInFunctionalInterfaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/Lambda.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/testingI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaPrograms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaPrograms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/DSA/CLRS/DivideAndConquer/MaximumSubarrayProblem/MaxSubArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/DSA/CLRS/DivideAndConquer/MaximumSubarrayProblem/MaxSubArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/DSA/DynamicProgramming/ExtendedRodCut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/DSA/DynamicProgramming/Fibonacci_dp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/DSA/DynamicProgramming/Info.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/DSA/DynamicProgramming/MatrixChainMutiplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/DSA/DynamicProgramming/RodCutting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/FinalPracical/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/FinalPracical/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/FinalPracical/Q2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/FinalPracical/TestEmployee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/testingJava/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/Java/testingJava/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DSA/CLRS/DivideAndConquer/MaximumSubarrayProblem/MaxSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/CLRS/DivideAndConquer/MaximumSubarrayProblem/MaxSubArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DSA/DynamicProgramming/ExtendedRodCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/DynamicProgramming/RodCutting/ExtendedRodCut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DSA/DynamicProgramming/Fibonacci_dp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/DynamicProgramming/Fibonacci/Fibonacci_dp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DSA/DynamicProgramming/Info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/DynamicProgramming/RodCutting/Info.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DSA/DynamicProgramming/MatrixChainMutiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/DynamicProgramming/MCM/MatrixChainMutiplication_bruteforce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DSA/DynamicProgramming/RodCutting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/DynamicProgramming/RodCutting/RodCutting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/LearningJava/FinalPracical/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/LearningJava/FinalPracical/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/LearningJava/FinalPracical/Q2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/LearningJava/FinalPracical/TestEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/testingJava/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/testingJava/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/testingJava/abc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/DynamicProgramming/MCM/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/cls.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/cls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/iff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/iff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/RepeatedStrMatch/RepeatedStrMtch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/RepeatedStrMatch/RepeatedStrMtch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +27,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -81,42 +46,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "leetcode.id",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\javaPrograms\src\LeetCode\Three_Sum" />
       <recent name="D:\IdeaProjects\javaPrograms\src\DSA\DynamicProgramming\RodCutting" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LambdaExp">
-    <configuration name="AnonymousClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java.LearningJava.BeyondBasics.LambdaExpression.AnonymousClass" />
+  <component name="RunManager" selected="Application.BFS">
+    <configuration name="BFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DSA.Graph.BFS.BFS" />
       <module name="javaPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java.LearningJava.BeyondBasics.LambdaExpression.*" />
+          <option name="PATTERN" value="DSA.Graph.BFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KadaneAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DSA.CLRS.DivideAndConquer.MaximumSubarrayProblem.KadaneAlgorithm" />
+    <configuration name="BuiltInFunctionalInterfaces" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java.LearningJava.BeyondBasics.LambdaExpression.BuiltInFunctionalInterfaces" />
       <module name="javaPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DSA.CLRS.DivideAndConquer.MaximumSubarrayProblem.*" />
+          <option name="PATTERN" value="Java.LearningJava.BeyondBasics.LambdaExpression.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DSA.CLRS.DivideAndConquer.MaximumSubarrayProblem.MaxSubArray" />
+    <configuration name="Three_Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Three_Sum.Three_Sum" />
       <module name="javaPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DSA.CLRS.DivideAndConquer.MaximumSubarrayProblem.*" />
+          <option name="PATTERN" value="LeetCode.Three_Sum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Three_Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Three_Sum.Three_Sum" />
+    <configuration name="testingI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java.LearningJava.BeyondBasics.LambdaExpression.testingI" />
       <module name="javaPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.Three_Sum.*" />
+          <option name="PATTERN" value="Java.LearningJava.BeyondBasics.LambdaExpression.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -305,21 +271,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.BFS" />
+      <item itemvalue="Application.testingI" />
+      <item itemvalue="Application.BuiltInFunctionalInterfaces" />
       <item itemvalue="Application.LambdaExp" />
-      <item itemvalue="Application.AnonymousClass" />
-      <item itemvalue="Application.KadaneAlgorithm" />
-      <item itemvalue="Application.MaxSubArray" />
       <item itemvalue="Application.Three_Sum" />
       <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.1.2.Final" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BFS" />
+        <item itemvalue="Application.testingI" />
+        <item itemvalue="Application.BuiltInFunctionalInterfaces" />
         <item itemvalue="Application.LambdaExp" />
         <item itemvalue="Application.Three_Sum" />
-        <item itemvalue="Application.AnonymousClass" />
-        <item itemvalue="Application.KadaneAlgorithm" />
-        <item itemvalue="Application.MaxSubArray" />
       </list>
     </recent_temporary>
   </component>
@@ -346,11 +312,31 @@
       <workItem from="1676654075841" duration="15166000" />
       <workItem from="1676807282313" duration="8049000" />
       <workItem from="1677087252187" duration="1980000" />
+      <workItem from="1677135751348" duration="1531000" />
+      <workItem from="1677688565137" duration="3574000" />
+      <workItem from="1677760295767" duration="5576000" />
+      <workItem from="1679504925265" duration="190000" />
+      <workItem from="1679505375382" duration="187000" />
+      <workItem from="1679506124541" duration="7862000" />
+      <workItem from="1679661866828" duration="850000" />
+      <workItem from="1679809996626" duration="89000" />
+      <workItem from="1682272599494" duration="7176000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

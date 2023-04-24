@@ -1,5 +1,7 @@
 package LeetCode.RepeatedStrMatch;
 
-public class RepeatedStrMtch {
+class RepeatedStrMtch{
+    public static void main(String[] args) {
 
+    }
 }
