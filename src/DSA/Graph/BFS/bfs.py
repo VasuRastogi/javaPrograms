@@ -9,15 +9,16 @@ from collections import deque
 def bfs(G, s):
     # Make a queue q (active queue)
     # Make a queue visited (passive queue)
-    q = []
+    q = deque()
     q.append(s)
     visited = []
     while q:
-        u = q.pop()  # remember to add it into visited.
-        visited.append(u)
-        for i in G[u]:
-            if (not i in visited) & (not i in q):
-                q.append(i)
+        u = q.popleft()  # remember to add it into visited.
+        if u not in visited:
+            visited.append(u)
+            for i in G[u]:
+                if (i not in visited) & (i not in q):
+                    q.append(i)
     return visited
 
 
