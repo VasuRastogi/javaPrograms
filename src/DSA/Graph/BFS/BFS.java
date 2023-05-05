@@ -1,50 +1,37 @@
 package DSA.Graph.BFS;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class BFS {
-    private static final int WHITE = 0;
-    private static final int GRAY = 1;
-    private static final int BLACK = 2;
-    private static class Vertex{
-        int color;  // white, grey or black for not visited, visited but not explored and fully visited and explored respectively.
-        int d;      // distance from starting vertex s.
-        Vertex pi;  // Previous vertex.
-        ArrayList<Vertex> adj;  // adjacent vertex's list.
 
-        Vertex(){
-            color = WHITE;
-            d = Integer.MAX_VALUE;
-            pi = null;
-            adj = new ArrayList<>();
-        }
-    }
-    public static void bfs(ArrayList<Vertex> graph, Vertex s ){
-        for (Vertex u : graph) {
-            if (u != s) {
-                u.color = WHITE;
-                u.d = Integer.MAX_VALUE;
-                u.pi = null;
-            }
-        }
-        s.color = GRAY;
-        s.d = 0;
-        s.pi = null;
-        Queue<Vertex> Q = new LinkedList<>();
-        Q.offer(s);
-        while (!Q.isEmpty()) {
-            Vertex u = Q.poll();
-            for (Vertex v : u.adj) {
-                if (v.color == WHITE) {
-                    v.color = GRAY;
-                    v.d = u.d + 1;
-                    v.pi = u;
-                    Q.offer(v);
+    public static ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> G, int s) {
+        Queue<Integer> q = new LinkedList<>();
+        q.add(s);
+        ArrayList<Integer> visited = new ArrayList<>();
+        while (!q.isEmpty()) {
+            int u = q.poll();
+            if (!visited.contains(u)) {
+                visited.add(u);
+                for (int i : G.get(u)) {
+                    if (!visited.contains(i)) {
+                        q.add(i);
+                    }
                 }
             }
-            u.color = BLACK;
         }
+        return visited;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
+        graph.add(new ArrayList<Integer>(){{add(1); add(2);}});    // vertex 0
+        graph.add(new ArrayList<Integer>(){{add(0); add(2); add(3);}}); // vertex 1
+        graph.add(new ArrayList<Integer>(){{add(0); add(1); add(4);}}); // vertex 2
+        graph.add(new ArrayList<Integer>(){{add(1); add(4); add(5);}}); // vertex 3
+        graph.add(new ArrayList<Integer>(){{add(2); add(3); add(6);}}); // vertex 4
+        graph.add(new ArrayList<Integer>(){{add(3);}}); // vertex 5
+        graph.add(new ArrayList<Integer>(){{add(4);}}); // vertex 6
+        System.out.println(bfs(graph, 0)); // output: [0, 1, 2, 3, 4, 5, 6]
     }
 }

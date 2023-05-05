@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d8a32f-2aaa-4433-8b0e-99067915cd21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DSA/Graph/BFS/BFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/BuiltInFunctionalInterfaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/Lambda.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/testingI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/cls.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/cls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/iff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaPrograms/Java/LearningJava/BeyondBasics/LambdaExpression/iff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/LearningJava/BeyondBasics/LambdaExpression/LambdaExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/RepeatedStrMatch/RepeatedStrMtch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/RepeatedStrMatch/RepeatedStrMtch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DSA/Graph/BFS/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DSA/Graph/BFS/BFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +50,7 @@
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +75,7 @@
       <module name="javaPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DSA.Graph.BFS.*" />
+          <option name="PATTERN" value="DSA.Graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -320,7 +313,8 @@
       <workItem from="1679506124541" duration="7862000" />
       <workItem from="1679661866828" duration="850000" />
       <workItem from="1679809996626" duration="89000" />
-      <workItem from="1682272599494" duration="7176000" />
+      <workItem from="1682272599494" duration="11281000" />
+      <workItem from="1682540664181" duration="890000" />
     </task>
     <servers />
   </component>
